@@ -37,6 +37,6 @@ Abra o terminal no diretório que está o arquivo `main.py` e invoque o script
 `python -m main preco rendimento --exibir-graficos`
 
 ### argumentos
-preco = "preço do veículo"  
-rendimento = "km/l que o carro rende"  
+`preco` = "preço do veículo"  
+`rendimento` = "km/l que o carro rende"  
 `--exibir-graficos`[OPCIONAL] Exibir gráficos das funções de pertencimento
