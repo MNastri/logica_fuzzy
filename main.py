@@ -18,7 +18,8 @@ def main(*inputs, exibir=True):
     universos = obter_universos()
     variaveis_fuzzy = criar_variaveis(*universos)
     criar_funcoes_pertinencia(*variaveis_fuzzy, exibir=exibir)
-    sistema_de_controle = criar_sistema_de_controle(*variaveis_fuzzy)
+    regras_logicas = obter_regras(*variaveis_fuzzy)
+    sistema_de_controle = criar_sistema_de_controle(regras_logicas)
 
     # Simulando o resultado a partir das entradas
     controle_simulacao = ControlSystemSimulation(sistema_de_controle)
@@ -57,7 +58,7 @@ def criar_funcoes_pertinencia(preco, rendimento, beneficio, *, exibir=False):
         plt.show()
 
 
-def criar_sistema_de_controle(preco, rendimento, beneficio):
+def obter_regras(preco, rendimento, beneficio):
     # Abreviações
     P = preco
     R = rendimento
@@ -74,6 +75,10 @@ def criar_sistema_de_controle(preco, rendimento, beneficio):
         (P["alto"] | R["médio"], B["médio"]),
         (P["alto"] | R["baixo"], B["baixo"]),
     ]
+    return logicas
+
+
+def criar_sistema_de_controle(logicas):
     regras = [Rule(*logica) for logica in logicas]
     sistema = ControlSystem(rules=regras)
     return sistema
