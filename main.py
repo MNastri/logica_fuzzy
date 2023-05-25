@@ -86,9 +86,7 @@ def criar_sistema_de_controle(logicas):
 
 def simular_estado(simulacao, preco, rendimento):
     simulacao.input["preço"] = preco
-    # simulacao.input["preço"] = int(sys.argv[1])
     simulacao.input["rendimento"] = rendimento
-    # simulacao.input["rendimento"] = int(sys.argv[2])
     simulacao.compute()
 
 
