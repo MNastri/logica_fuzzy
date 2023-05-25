@@ -1,6 +1,6 @@
 # Objetivo
 Fazer uma demonstração de um sistema de lógica fuzzy para transformar 
-um conjunto de entradas difusas em uma saida nítida.  
+eum conjunto de entradas em uma saida nítida utilizando regras difusas.  
 Conteúdo baseado nos vídeos abaixo, bem como a documentação oficial da biblioteca skfuzzy:  
 [Aula 01 - Lógica Fuzzy - parte 1](https://www.youtube.com/watch?v=9Oe21TX5lMQ&ab_channel=Jos%C3%A9Ricardo)  
 [Aula 02 - Lógica Fuzzy - implementação em python - parte 2](https://www.youtube.com/watch?v=oTj6UppBsRk&t=18s&ab_channel=Jos%C3%A9Ricardo)  
