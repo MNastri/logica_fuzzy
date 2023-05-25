@@ -13,7 +13,7 @@ from skfuzzy.control import (
 )
 
 
-def main(*inputs, exibir=True):
+def main(*entradas, exibir=True):
     # Preparando sistema fuzzy
     universos = obter_universos()
     variaveis_fuzzy = criar_variaveis(*universos)
@@ -22,9 +22,9 @@ def main(*inputs, exibir=True):
     sistema_de_controle = criar_sistema_de_controle(regras_logicas)
 
     # Simulando o resultado a partir das entradas
-    controle_simulacao = ControlSystemSimulation(sistema_de_controle)
-    simular_estado(controle_simulacao, *inputs)
-    exibir_resultado(controle_simulacao, variaveis_fuzzy)
+    controlador_simulacao = ControlSystemSimulation(sistema_de_controle)
+    simular_estado(controlador_simulacao, *entradas)
+    exibir_resultado(controlador_simulacao, variaveis_fuzzy)
 
 
 def obter_universos():
