@@ -14,7 +14,7 @@ utilizando a lógica fuzzy
 # Lógica fuzzy e Lógica clássica
 A lógica clássica é uma lógica binária, onde uma relação existe ou não existe, 
 enquanto a Lógica fuzzy considera que a relação de uma váriavel pode ser representada
-um grau de intensidade.
+por um grau de intensidade.
 
 A Lógica fuzzy vem do fato que no dia a dia não é possível identificar definitivamente
 qual a relação exata entre uma váriavel e um conjunto (um veículo vendido a R$40.000,00 é caro ou barato?).   
